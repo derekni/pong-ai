@@ -1,21 +1,17 @@
-import Head from "next/head";
-import styles from "../../styles/Home.module.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-export default function Home() {
+export default function Game() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Pong AI</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>Game</h1>
-      </main>
-
-      <footer className={styles.footer}>
-        Created with ❤️ by Derek Ni and Chris Yuan
-      </footer>
-    </div>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   );
 }
+
+// // If you want to start measuring performance in your app, pass a function
+// // to log results (for example: reportWebVitals(console.log))
+// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// reportWebVitals();
